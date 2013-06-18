@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/conversation_list_container"
+	android:orientation="vertical"
+	android:background="#ffffff">
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:id="@+id/conversation_list_actions_container"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="3dip"
+		android:layout_height="50dip"
+		android:background="#5497CA">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:id="@+id/new_plain_message"
+			android:layout_marginRight="10dip"
+			android:background="@drawable/new_regular_message"
+			android:layout_gravity="left"
+			android:textColor="#000000" />
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:id="@+id/new_message"
+			android:layout_toRightOf="@id/new_plain_message"
+			android:layout_marginRight="10dip"
+			android:background="@drawable/new_regular_message"
+			android:textColor="#000000" />
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:background="@drawable/new_speech_message"
+			android:layout_toRightOf="@id/new_message"
+			android:id="@+id/new_voice_message"
+			android:textColor="#000000" />
+		<ImageButton
+			android:src="@drawable/sym_keyboard_search"
+			android:id="@+id/message_search"
+			android:layout_gravity="right"
+			android:background="#0fff"
+			android:layout_marginLeft="60dip"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_height="fill_parent" />
+
+	</RelativeLayout>
+	<FrameLayout
+		android:layout_weight="1.0"
+		android:id="@+id/conversation_list_list_container"
+		android:layout_height="wrap_content"
+		android:background="#ffffff"
+		android:layout_width="fill_parent">
+		<ListView
+			android:id="@+id/conversation_list_message_list_view"
+			android:layout_height="fill_parent"
+			android:dividerHeight="1dip"
+			android:footerDividersEnabled="true"
+			android:divider="#3E75E0"
+			android:smoothScrollbar="true"
+			android:fadeScrollbars="true"
+			android:fadingEdge="none"
+			android:background="#ffffff"
+			android:layout_width="fill_parent">
+		</ListView>
+	</FrameLayout>
+</LinearLayout>

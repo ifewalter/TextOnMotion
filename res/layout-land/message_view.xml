@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/message_view_container"
+	android:orientation="horizontal"
+	android:background="#ffffff">
+	
+	<FrameLayout
+		android:layout_weight="1.0"
+		android:id="@+id/message_view_list_container"
+		android:layout_height="fill_parent"
+		android:background="#eeeeee"
+		android:layout_width="fill_parent">
+		<ListView
+			android:id="@+id/message_view_list_view"
+			android:layout_height="fill_parent"
+			android:persistentDrawingCache="animation|scrolling"
+			android:dividerHeight="25dip"
+			android:footerDividersEnabled="true"
+			android:divider="#00ffffff"
+			android:background="#eeeeee"
+			android:layout_width="fill_parent">
+		</ListView>
+	</FrameLayout>
+	
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:id="@+id/message_view_actions_container"
+		android:layout_width="50dip"
+		android:layout_marginTop="3dip"
+		android:layout_height="fill_parent"
+		android:background="#3E8AE0">
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/message_view_call"
+			android:background="@drawable/call"
+			android:layout_gravity="top"
+			android:textColor="#000000" />
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/message_view_reply"
+			android:layout_below="@id/message_view_call"
+			android:background="@drawable/reply"
+			android:textColor="#000000" />
+		<ImageButton
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/trash"
+			android:background="#663E8AE0"
+			android:layout_below="@id/message_view_reply"
+			android:id="@+id/message_view_delete"
+			android:textColor="#000000" />
+		<ImageButton
+			android:src="@drawable/sym_keyboard_search"
+			android:id="@+id/message_view_search"
+			android:layout_gravity="bottom"
+			android:background="#0fff"
+			android:layout_marginTop="60dip"
+			android:layout_width="fill_parent"
+			android:layout_alignParentBottom="true"
+			android:layout_height="wrap_content" />
+
+	</RelativeLayout>
+</LinearLayout>
