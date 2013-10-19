@@ -26,10 +26,10 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.ifewalter.android.textonmotion.R;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.ifewalter.android.textonmotion.R;
 
 public class CandidateView extends View {
 

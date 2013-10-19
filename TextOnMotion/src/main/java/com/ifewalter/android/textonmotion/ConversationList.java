@@ -1,9 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -15,10 +11,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Process;
 import android.preference.PreferenceManager;
-import android.telephony.TelephonyManager;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -39,14 +32,15 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.api.translate.Translate;
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
 import com.ifewalter.android.textonmotion.speechengine.VoiceSpeechEngine;
-import com.mobclix.android.sdk.MobclixAdView;
-import com.mobclix.android.sdk.MobclixMMABannerXLAdView;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class ConversationList extends Activity {
 

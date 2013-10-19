@@ -20,13 +20,13 @@
  */
 package com.google.api.detect;
 
-import java.net.URL;
-import java.net.URLEncoder;
+import com.google.api.GoogleAPI;
+import com.google.api.translate.Language;
 
 import org.json.JSONObject;
 
-import com.google.api.GoogleAPI;
-import com.google.api.translate.Language;
+import java.net.URL;
+import java.net.URLEncoder;
 
 /**
  * Makes the Google Detect API available to Java applications.

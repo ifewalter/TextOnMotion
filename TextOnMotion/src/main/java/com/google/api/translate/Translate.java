@@ -20,14 +20,14 @@
  */
 package com.google.api.translate;
 
-import java.net.URL;
-import java.net.URLEncoder;
+import com.google.api.GoogleAPI;
+import com.tecnick.htmlutils.htmlentities.HTMLEntities;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.google.api.GoogleAPI;
-import com.tecnick.htmlutils.htmlentities.HTMLEntities;
+import java.net.URL;
+import java.net.URLEncoder;
 
 /**
  * Makes the Google Translate API available to Java applications.

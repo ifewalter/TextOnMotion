@@ -1,9 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
@@ -21,6 +17,10 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ConversationListCursorAdapter extends SimpleCursorAdapter {
 

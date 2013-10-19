@@ -20,14 +20,14 @@
  */
 package com.google.api;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-import org.json.JSONObject;
 
 /**
  * Makes generic Google API functionality available to specific API classes.

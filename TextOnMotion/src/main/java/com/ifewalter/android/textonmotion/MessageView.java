@@ -1,13 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
-import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
-import com.ifewalter.android.textonmotion.speechengine.VoiceSpeechEngine;
-import com.mobclix.android.sdk.MobclixMMABannerXLAdView;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -32,10 +24,16 @@ import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
+import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
+import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
+import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.speechengine.VoiceSpeechEngine;
 
 public class MessageView extends Activity {
 

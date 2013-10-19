@@ -1,9 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Random;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +12,10 @@ import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Random;
 
 public class MessageIntercept extends BroadcastReceiver {
 	@Override

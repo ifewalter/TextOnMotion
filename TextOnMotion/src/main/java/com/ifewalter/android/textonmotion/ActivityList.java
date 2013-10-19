@@ -1,8 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -26,6 +23,10 @@ import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
+import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 
 public class ActivityList extends Activity {
 

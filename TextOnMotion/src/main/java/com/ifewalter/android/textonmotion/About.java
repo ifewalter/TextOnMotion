@@ -1,9 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +9,10 @@ import android.view.MenuItem;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class About extends Activity {
 	@Override

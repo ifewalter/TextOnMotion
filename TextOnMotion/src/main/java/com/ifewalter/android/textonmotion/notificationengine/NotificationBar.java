@@ -5,7 +5,6 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Vibrator;
 
 import com.ifewalter.android.textonmotion.ConversationList;
 import com.ifewalter.android.textonmotion.R;

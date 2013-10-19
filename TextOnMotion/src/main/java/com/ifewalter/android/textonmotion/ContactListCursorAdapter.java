@@ -1,7 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.util.ArrayList;
-
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,6 +17,8 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class ContactListCursorAdapter extends SimpleCursorAdapter {
 

@@ -40,4 +40,5 @@
 		name="launch_help_summary_intent_preference">TextOnMotion Guide and Terms</string>
 	<string
 		name="message_view_receipient_name">2001</string>
+    <string name="action_settings">Settings</string>
 </resources>

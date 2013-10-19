@@ -1,25 +1,20 @@
 package com.ifewalter.android.textonmotion;
 
-import java.sql.Time;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class MessageViewCursorAdapter extends SimpleCursorAdapter {
 

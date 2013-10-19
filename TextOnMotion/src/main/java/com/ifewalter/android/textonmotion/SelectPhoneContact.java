@@ -1,7 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -19,6 +17,8 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class SelectPhoneContact extends Activity {
 

@@ -18,8 +18,8 @@ package com.ifewalter.android.textonmotion.softkeyboard;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
 import android.inputmethodservice.Keyboard.Key;
+import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 
 public class LatinKeyboardView extends KeyboardView {

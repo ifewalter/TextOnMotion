@@ -16,13 +16,13 @@
 
 package com.ifewalter.android.textonmotion.softkeyboard;
 
-import com.ifewalter.android.textonmotion.R;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.inputmethodservice.Keyboard;
 import android.view.inputmethod.EditorInfo;
+
+import com.ifewalter.android.textonmotion.R;
 
 public class LatinKeyboard extends Keyboard {
 

@@ -1,7 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-
 import android.content.Context;
 import android.database.Cursor;
 import android.view.LayoutInflater;
@@ -9,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 
 public class ActivityListCursorAdapter extends SimpleCursorAdapter {
 

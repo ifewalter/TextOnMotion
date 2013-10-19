@@ -1,10 +1,5 @@
 package com.ifewalter.android.textonmotion.sendMessage;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Random;
-
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -27,6 +22,11 @@ import android.widget.Toast;
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Random;
 
 public class SendSMS extends Service {
 

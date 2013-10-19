@@ -1,9 +1,5 @@
 package com.ifewalter.android.textonmotion.speechengine;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -44,6 +40,10 @@ import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
 import com.mobclix.android.sdk.MobclixMMABannerXLAdView;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 public class VoiceSpeechEngine extends Activity
 		implements

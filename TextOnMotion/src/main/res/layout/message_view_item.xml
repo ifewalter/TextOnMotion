@@ -8,7 +8,7 @@
 	android:fadingEdge="vertical"
 	android:background="#fff"
 	android:paddingRight="30dip"
-	android:paddingBottom="10px;"
+	android:paddingBottom="10px"
 	android:id="@+id/message_view_list_item_linear_container2"
 	android:layout_height="wrap_content">
 

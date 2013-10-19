@@ -1,11 +1,5 @@
 package com.ifewalter.android.textonmotion.backuprestore;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.channels.FileChannel;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -17,6 +11,12 @@ import android.widget.Toast;
 
 import com.ifewalter.android.textonmotion.R;
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.channels.FileChannel;
 
 public class sdBackup extends Activity {
 	private String errorMessage;

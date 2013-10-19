@@ -1,8 +1,5 @@
 package com.ifewalter.android.textonmotion;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
-
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Intent;
@@ -16,6 +13,9 @@ import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
+import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 
 public class Search extends Activity {
 
