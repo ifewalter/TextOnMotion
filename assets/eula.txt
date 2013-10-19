@@ -1,0 +1,25 @@
+Welcome to TextOnMotion.
+
+
+The use of this application is bound by the the terms and conditions 
+of the Android Developer Challenge 2011, available at this location - 
+http://www.code.google.com/android/adcafrica/terms.html , and superceeds
+ any contradiction with any of the terms below.
+ (Referenced, Aug. 30, 2011. 4:15AM GMT)
+ 
+ USER DATA
+ TextOnMotion does not in any way retrieve any or part of user data without approval.
+ Such data including Location data, Phone book and Text messages when collected are
+ shared only between the the user, Mobile service provider (Please refer to their terms of service)
+ and Google (www.google.com/intl/en/privacy), for purposes no other than Text messaging, Location URL shortening and text translation.
+ 
+ INDEMNITY
+ IN NO EVENT SHALL TEXTONMOTION OR ITS DEVELOPER BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER
+  (INCLUDING WITHOUT LIMITATION, THOSE RESULTING FROM: (1) RELIANCE ON THE MATERIALS PRESENTED, (2) COSTS OF REPLACEMENT GOODS, (3) LOSS OF USE, DATA OR PROFITS, 
+  (4) DELAYS OR BUSINESS INTERRUPTIONS, (5) AND ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF INFORMATION) WHETHER OR NOT
+   TEXTONMOTION HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+You agree not to hold TextOnMotion or its Developer responsible for any loss of data and any damages as a result of such loss from the installation or use of TextOnMotion.
+ 
+
+UPDATES
+Terms herein are subject to change after the challenge without notification.

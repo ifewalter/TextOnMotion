@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff"
+	android:paddingTop="1dip"
+	android:paddingBottom="2dip">
+
+	<FrameLayout
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:id="@+id/message_list_contact_badge_container"
+		android:layout_alignParentLeft="true">
+
+		<ImageView
+			android:id="@+id/message_list_contact_badge"
+			android:layout_width="fill_parent"
+			android:src="@drawable/contact"
+			android:layout_height="fill_parent" />
+	</FrameLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/message_list_message_details_container"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@id/message_list_contact_badge_container">
+
+		<TextView
+			android:id="@+id/message_list_phone"
+			android:layout_marginLeft="10px"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:typeface="monospace"
+			android:textColor="#000000"
+			android:layout_alignParentTop="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<TextView
+			android:id="@+id/message_list_date_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:layout_marginLeft="20px"
+			android:layout_alignParentRight="true"
+			android:textColor="#3E53B4"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/message_list_message_snippet"
+			android:textSize="16sp"
+			android:paddingTop="10px"
+			android:textColor="#000000"
+			android:paddingLeft="1dip"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:singleLine="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/message_list_phone" />
+
+		<TextView
+			android:id="@+id/message_list_item_date"
+			android:layout_width="fill_parent"
+			android:gravity="bottom|right"
+			android:textSize="13sp"
+			android:textStyle="italic"
+			android:layout_below="@id/message_list_message_snippet"
+			android:textColor="#767676"
+			android:background="#ffffff"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+</RelativeLayout>

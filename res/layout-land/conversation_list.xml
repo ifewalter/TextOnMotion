@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/conversation_list_container"
+	android:orientation="horizontal"
+	android:background="#ffffff">
+	<FrameLayout
+		android:layout_weight="1.0"
+		android:id="@+id/conversation_list_list_container"
+		android:layout_height="fill_parent"
+		android:background="#ffffff"
+		android:layout_gravity="left"
+		android:layout_width="wrap_content">
+		<ListView
+			android:id="@+id/conversation_list_message_list_view"
+			android:layout_height="fill_parent"
+			android:dividerHeight="1dip"
+			android:footerDividersEnabled="true"
+			android:divider="#3E75E0"
+			android:background="#ffffff"
+			android:layout_width="fill_parent">
+		</ListView>
+	</FrameLayout>
+	<RelativeLayout
+		android:orientation="vertical"
+		android:id="@+id/conversation_list_actions_container"
+		android:layout_width="50dip"
+		android:layout_gravity="right"
+		android:layout_marginTop="3dip"
+		android:layout_height="fill_parent"
+		android:background="#3E8AE0">
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/new_plain_message"
+			android:background="@drawable/new_regular_message"
+			android:layout_gravity="top"
+			android:textColor="#000000" />
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/new_message"
+			android:background="@drawable/new_regular_message"
+			android:layout_below="@id/new_plain_message"
+			android:textColor="#000000" />
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/new_speech_message"
+			android:layout_below="@id/new_message"
+			android:id="@+id/new_voice_message"
+			android:textColor="#000000" />
+		<ImageButton
+			android:src="@drawable/sym_keyboard_search"
+			android:id="@+id/message_search"
+			android:layout_gravity="bottom"
+			android:background="#0fff"
+			android:layout_width="fill_parent"
+			android:layout_alignParentBottom="true"
+			android:layout_height="wrap_content" />
+
+	</RelativeLayout>
+</LinearLayout>

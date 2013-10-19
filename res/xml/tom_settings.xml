@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/preference_help_title">
+
+		<PreferenceScreen
+			android:title="@string/preference_help_title"
+			android:summary="@string/launch_help_summary_intent_preference">
+			<intent
+				android:targetPackage="com.ifewalter.android.textonmotion"
+				android:targetClass="com.ifewalter.android.textonmotion.About" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Performance Settings">
+		<PreferenceScreen
+			android:key="location_preference_screen"
+			android:title="Location Settings"
+			android:summary="Change location preferences">
+
+
+			<PreferenceCategory
+				android:title="Location Settings">
+				<CheckBoxPreference
+					android:key="acquire_location_preference"
+					android:title="Auto-acquire location"
+					android:defaultValue="true"
+					android:summary="Acquire location on startup" />
+			</PreferenceCategory>
+			<PreferenceCategory
+				android:title="Location Provider"
+				android:summary="How should location be acquired?">
+				<ListPreference
+					android:entryValues="@array/provider_preference_list"
+					android:entries="@array/provider_preference_values"
+					android:key="location_provider_preference"
+					android:dependency="acquire_location_preference"
+					android:title="Location Method"
+					android:summary="How should location be acquired?"
+					android:negativeButtonText="Cancel"
+					android:positiveButtonText="Ok"></ListPreference>
+
+				<ListPreference
+					android:entries="@array/location_update_interval_list"
+					android:entryValues="@array/location_update_interval_values"
+					android:title="Update frequency"
+					android:key="location_update_intereval_preference"
+					android:dependency="acquire_location_preference"
+					android:summary="How often should location be acquired?"
+					android:negativeButtonText="Cancel"
+					android:positiveButtonText="Ok">
+				</ListPreference>
+
+			</PreferenceCategory>
+
+
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<!-- <PreferenceCategory -->
+	<!-- android:title="Message View" -->
+	<!-- android:summary="How messages will be shown"> -->
+	<!-- <ListPreference -->
+	<!-- android:entries="@array/message_view_type" -->
+	<!-- android:entryValues="@array/message_view_type_values" -->
+	<!-- android:key="message_view_preference" -->
+	<!-- android:title="Message Layout" -->
+	<!-- android:summary="How would you like messages arranged?" -->
+	<!-- android:negativeButtonText="Cancel" -->
+	<!-- android:positiveButtonText="Ok"></ListPreference> -->
+
+	<!-- </PreferenceCategory> -->
+
+
+	<PreferenceCategory
+		android:title="Notification Settings">
+
+		<PreferenceScreen
+			android:title="Notification Events"
+			android:summary="Change notification triggers">
+			<CheckBoxPreference
+				android:key="sent_notification_preference"
+				android:title="Message Sent"
+				android:defaultValue="true"
+				android:summary="Notify when message is sent" />
+
+			<CheckBoxPreference
+				android:key="delivered_notification_preference"
+				android:title="Message Delivered"
+				android:defaultValue="true"
+				android:summary="Notify when message is delivered" />
+
+			<CheckBoxPreference
+				android:key="received_notification_preference"
+				android:title="Message Received"
+				android:defaultValue="true"
+				android:summary="Notify when message is received" />
+
+
+			<PreferenceCategory
+				android:title="GPS Notification">
+				<CheckBoxPreference
+					android:key="gps_status_notification_preference"
+					android:title="GPS status"
+					android:defaultValue="true"
+					android:summary="Show Alert when GPS switch is off, while GPS is set as prefered provider" />
+			</PreferenceCategory>
+
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Word abbreviation dictionary">
+
+		<PreferenceScreen
+			android:title="Word dictionary"
+			android:summary="Manage what and how words are shortened">
+			<intent
+				android:targetPackage="com.ifewalter.android.textonmotion"
+				android:targetClass="com.ifewalter.android.textonmotion.LongShortView" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Backup &amp; Restore">
+
+		<PreferenceScreen
+			android:title="Backup &amp; Restore"
+			android:summary="Backup and restore application state">
+
+			<PreferenceScreen
+				android:title="Backup TextOnMotion"
+				android:summary="Backup TextOnMotion data to memory card">
+				<intent
+					android:targetPackage="com.ifewalter.android.textonmotion"
+					android:targetClass="com.ifewalter.android.textonmotion.backuprestore.sdBackup" />
+			</PreferenceScreen>
+			<PreferenceScreen
+				android:title="Restore TextOnMotion"
+				android:summary="Restore TextOnMotion from previous backup">
+				<intent
+					android:targetPackage="com.ifewalter.android.textonmotion"
+					android:targetClass="com.ifewalter.android.textonmotion.backuprestore.sdRestore" />
+			</PreferenceScreen>
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+	android:title="Feedback">
+		<PreferenceScreen
+			android:title="Feedback"
+			android:summary="Found something odd?, Like to suggest something? Please, let us know.">
+			<intent
+				android:targetPackage="com.ifewalter.android.textonmotion"
+				android:targetClass="com.ifewalter.android.textonmotion.SendMail" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+</PreferenceScreen>

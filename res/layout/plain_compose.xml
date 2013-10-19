@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:background="#fff"
+	android:id="@+id/plain_compose_parent_container"
+	android:orientation="vertical"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/plain_compose_options_container"
+		android:layout_height="40dip"
+		android:gravity="right"
+		android:layout_alignParentBottom="true"
+		android:background="#5497CA"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/plain_compose_send_message_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/outbox" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:background="#5497CA"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip"
+		android:id="@+id/plain_compose_contact_container"
+		android:layout_height="50dip">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:id="@+id/plain_compose_contact_edit_text"
+			android:layout_height="wrap_content"
+			android:maxHeight="50dip"
+			android:height="50dip"
+			android:layout_gravity="left|bottom"
+			android:hint="Add Contacts, Seperate miltiple with ;"
+			android:layout_weight="1.0"
+			android:singleLine="true"
+			android:textColorHint="#ccc"
+			android:scrollHorizontally="true"
+			android:textColor="#000"
+			android:textSize="12sp"
+			android:gravity="left" />
+		<Button
+			android:id="@+id/plain_compose_add_contact"
+			android:padding="5dip"
+			android:background="@drawable/contact"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:layout_gravity="center" />
+	</LinearLayout>
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_weight="1.0"
+		android:id="@+id/plain_compose_compose_box_container"
+		android:layout_alignParentTop="true"
+		android:background="#5497CA"
+		android:paddingTop="3dip"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:focusable="true"
+			android:gravity="top|left"
+			android:singleLine="false"
+			android:hint="Compose Message"
+			android:focusableInTouchMode="true"
+			android:id="@+id/plain_compose_compose_box" />
+	</FrameLayout>
+</LinearLayout>
