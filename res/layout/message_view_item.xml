@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="#ffffff"
+	android:layout_marginTop="10dip"
+	android:paddingLeft="10dip"
+	android:fadingEdge="vertical"
+	android:paddingRight="20dip"
+	android:layout_marginBottom="10dip"
+	android:id="@+id/message_view_list_item_linear_container"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="17sp"
+		android:gravity="top|left"
+		android:textColor="#000000"
+		android:background="#00ffffff"
+		android:id="@+id/message_view_item_message_content" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="20dip"
+			android:layout_height="20dip"
+			android:background="@drawable/inbox"
+			android:id="@+id/message_view_status_inbox_icon" />
+		<ImageView
+			android:layout_width="20dip"
+			android:layout_height="20dip"
+			android:background="@drawable/outbox"
+			android:id="@+id/message_view_status_outbox_icon" />
+
+		<TextView
+			android:id="@+id/message_view_item_date"
+			android:layout_width="fill_parent"
+			android:gravity="bottom|right"
+			android:textSize="13sp"
+			android:textStyle="italic"
+			android:textColor="#767676"
+			android:background="#00ffffff"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+</LinearLayout>

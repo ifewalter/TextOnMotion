@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ListView android:id="@+id/contactListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="1dip"
+        android:layout_weight="1.0" />
+
+<LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="50dp">
+	
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" 
+        android:id="@+id/manualButton"
+        android:contentDescription="manual Entry Button"
+        android:text="@string/select_contact_list_manual_button"
+      />
+      
+      <Button
+        android:layout_width="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" 
+        android:contentDescription="Done Button"
+        android:id="@+id/doneButton"
+        android:text="@string/select_contact_list_done_button"
+      />
+        
+</LinearLayout>
+</LinearLayout>

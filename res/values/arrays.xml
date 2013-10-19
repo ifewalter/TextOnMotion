@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array
+		name="provider_preference_list">
+		<item>GPS</item>
+		<item>Network</item>
+	</string-array>
+	<string-array
+		name="provider_preference_values">
+		<item>GPS</item>
+		<item>Network</item>
+	</string-array>
+	<string-array
+		name="location_update_interval_list">
+		<item>3 Minutes</item>
+		<item>5 Minutes</item>
+		<item>10 Minutes</item>
+		<item>15 Minutes</item>
+		<item>20 Minutes</item>
+		<item>30 Minutes</item>
+		<item>60 Minutes</item>
+	</string-array>
+	<string-array
+		name="location_update_interval_values">
+		<item>3</item>
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+		<item>20</item>
+		<item>30</item>
+		<item>60</item>
+	</string-array>
+	<string-array
+		name="message_view_type">
+		<item>Threaded Conversation</item>
+		<item>Activity View</item>
+	</string-array>
+	<string-array
+		name="message_view_type_values">
+		<item>Thread</item>
+		<item>Activity</item>
+	</string-array>
+
+</resources>
