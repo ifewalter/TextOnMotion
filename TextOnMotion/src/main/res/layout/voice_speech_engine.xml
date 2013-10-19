@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:background="#bfbfbf"
+	android:id="@+id/voice_speech_engine_parent_container"
+	android:orientation="vertical"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/voice_speech_options_container"
+		android:layout_height="40dip"
+		android:gravity="right"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal">
+
+
+		<Button
+			android:id="@+id/voice_speech_help"
+			android:layout_width="wrap_content"
+			android:background="@drawable/help"
+			android:layout_height="wrap_content" />
+
+		<Button
+			android:id="@+id/voice_speech_restart"
+			android:layout_width="wrap_content"
+			android:background="@drawable/restart"
+			android:layout_height="wrap_content" />
+
+		<ImageButton
+			android:id="@+id/voice_speech_send_message_button"
+			android:layout_width="90dip"
+			android:layout_height="48dip"
+			android:background="@drawable/send_button" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_margin="4dip"
+		android:background="@drawable/conversation_list_container"
+		android:id="@+id/voice_speech_contact_container"
+		android:layout_height="50dip">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:id="@+id/voice_speech_contact_edit_text"
+			android:layout_height="wrap_content"
+			android:maxHeight="50dip"
+			android:height="50dip"
+			android:layout_gravity="left|bottom"
+			android:layout_weight="1.0"
+			android:singleLine="true"
+			android:textColorHint="#ccc"
+			android:scrollHorizontally="true"
+			android:textColor="#000"
+			android:gravity="left" />
+		<ImageButton
+			android:id="@+id/voice_speech_engine_add_contact"
+			android:padding="5dip"
+			android:background="@drawable/contact"
+			android:layout_width="48dip"
+			android:layout_height="48dip"
+			android:layout_gravity="right|bottom" />
+
+	</LinearLayout>
+	
+	    	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_weight="1.0"
+		android:id="@+id/voice_speech_engine_compose_box_container"
+		android:layout_alignParentTop="true"
+		android:paddingTop="3dip"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:focusable="true"
+			android:gravity="top|left"
+			android:singleLine="false"
+			android:hint="Speak to Compose"
+			android:focusableInTouchMode="true"
+			android:id="@+id/voice_speech_compose_box" />
+	</FrameLayout>
+	<LinearLayout
+		android:id="@+id/voice_ad_parent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<com.mobclix.android.sdk.MobclixMMABannerXLAdView
+			android:id="@+id/voice_advertising_banner_view"
+			android:layout_height="50dp"
+			android:layout_width="320dp"
+			android:layout_gravity="center"
+			android:tag="adspace" />
+	</LinearLayout>
+
+</LinearLayout>
