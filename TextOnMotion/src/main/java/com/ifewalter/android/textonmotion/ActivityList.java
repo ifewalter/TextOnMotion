@@ -24,9 +24,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
+import com.ifewalter.android.textonmotion.persistence.DeleteData;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.SelectData;
 
 public class ActivityList extends Activity {
 

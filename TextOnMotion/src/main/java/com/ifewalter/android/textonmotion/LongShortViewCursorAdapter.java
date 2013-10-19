@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 
 public class LongShortViewCursorAdapter extends SimpleCursorAdapter {
 

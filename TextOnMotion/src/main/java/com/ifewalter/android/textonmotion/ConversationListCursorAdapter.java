@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -35,8 +35,8 @@ import com.ifewalter.android.textonmotion.Compose;
 import com.ifewalter.android.textonmotion.R;
 import com.ifewalter.android.textonmotion.SelectPhoneContact;
 import com.ifewalter.android.textonmotion.TomSettings;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
 

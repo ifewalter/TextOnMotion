@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.telephony.SmsMessage;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.InsertData;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
 

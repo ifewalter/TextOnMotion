@@ -19,8 +19,8 @@ import android.preference.PreferenceManager;
 import android.telephony.SmsManager;
 import android.widget.Toast;
 
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.InsertData;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
 
 import java.text.SimpleDateFormat;

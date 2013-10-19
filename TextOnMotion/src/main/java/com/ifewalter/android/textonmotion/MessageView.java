@@ -28,9 +28,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.ifewalter.android.textonmotion.databaseparoles.DeleteData;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
-import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
+import com.ifewalter.android.textonmotion.persistence.DeleteData;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.SelectData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
 import com.ifewalter.android.textonmotion.speechengine.VoiceSpeechEngine;

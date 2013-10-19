@@ -10,7 +10,7 @@ import android.os.Environment;
 import android.widget.Toast;
 
 import com.ifewalter.android.textonmotion.R;
-import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
+import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 
 import java.io.File;
 import java.io.FileInputStream;

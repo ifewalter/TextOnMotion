@@ -43,7 +43,7 @@ public class About extends Activity {
 
 		WebView wv;
 
-		wv = (WebView) findViewById(R.id.webview_1);
+		wv = (WebView) findViewById(R.id.about_webview);
 		wv.getSettings().setBuiltInZoomControls(true);
 		wv.getSettings().setBlockNetworkImage(false);
 		wv.getSettings().setLoadsImagesAutomatically(true);
