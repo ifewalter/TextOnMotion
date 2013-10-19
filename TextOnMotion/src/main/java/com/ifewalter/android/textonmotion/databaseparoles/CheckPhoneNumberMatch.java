@@ -2,8 +2,8 @@ package com.ifewalter.android.textonmotion.databaseparoles;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.telephony.PhoneNumberUtils;
 
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.PhoneNumberUtil.MatchType;
 
 public class CheckPhoneNumberMatch {
@@ -20,7 +20,7 @@ public class CheckPhoneNumberMatch {
 	public static String searchForMatch(Context context, Cursor cursor,
 			String input) {
 
-		PhoneNumberUtils phoneUtil = new PhoneNumberUtils();
+		PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
 		String tempString = null;
 		if (cursor != null && !cursor.isLast()) {
 			cursor.moveToFirst();

@@ -24,4 +24,6 @@ android {
 
 dependencies {
 	compile 'com.android.support:appcompat-v7:18.0.0'
+    compile files('lib/httpmime-4.1.3.jar')
+    compile files('lib/libphonenumber-5.8.jar')
 }

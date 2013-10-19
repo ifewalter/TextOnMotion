@@ -39,7 +39,6 @@ import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
 import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
-import com.mobclix.android.sdk.MobclixMMABannerXLAdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,12 +79,6 @@ public class VoiceSpeechEngine extends Activity
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.voice_speech_engine);
-
-		MobclixMMABannerXLAdView adView = (MobclixMMABannerXLAdView) findViewById(R.id.voice_advertising_banner_view);
-		try {
-			adView.getAd();
-		} catch (Exception ex) {
-		}
 
 		setContactFromIntent();
 
