@@ -1,27 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ifewalter.textonmotion"
-    android:versionCode="1"
-    android:versionName="1.0" >
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ifewalter.android.textonmotion"
+	android:installLocation="auto" android:versionCode="10" android:versionName="1.5.0">
+	<uses-permission
+		android:name="android.permission.CAMERA"></uses-permission>
+	<uses-feature
+		android:name="android.hardware.camera"></uses-feature>
+	<uses-feature
+		android:name="android.hardware.camera.autofocus"></uses-feature>
+	<uses-permission
+		android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission
+		android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-sdk
+		android:targetSdkVersion="11"
+		android:minSdkVersion="8"></uses-sdk>
+	<uses-permission
+		android:name="android.permission.FLASHLIGHT"></uses-permission>
+	<uses-permission
+		android:name="android.permission.BROADCAST_SMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission
+		android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission
+		android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission
+		android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission
+		android:name="android.permission.BATTERY_STATS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.FLASHLIGHT"></uses-permission>
+	<uses-permission
+		android:name="android.permission.READ_SMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.RECEIVE_MMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.WRITE_SMS"></uses-permission>
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission
+		android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+	<uses-permission
+		android:name="android.permission.CALL_PHONE"></uses-permission>
+	<supports-screens
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true"
+		android:smallScreens="true"></supports-screens>
+	<uses-permission
+		android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 
-    <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="16" />
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:description="@string/app_desc" android:debuggable="false">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.ifewalter.textonmotion.MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
 
+		<meta-data
+			android:name="com.mobclix.APPLICATION_ID"
+			android:value="35fd47e5-55ea-4f3b-a96b-53d46ef14631" />
+		<activity    
+			android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+
+		<service
+			android:permission="android.permission.BIND_INPUT_METHOD"
+			android:name=".softkeyboard.SoftKeyboard"
+			android:label="@string/softkeybord_label"
+			android:description="@string/softkeyboard_description">
+			<intent-filter>
+				<action
+					android:name="android.view.InputMethod" />
+			</intent-filter>
+			<meta-data
+				android:name="android.view.im"
+				android:resource="@xml/method" />
+		</service>
+
+
+		<activity
+			android:name=".ConversationList"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action
+					android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="android.app.default_searchable"
+				android:value=".Search" />
+		</activity>
+
+		<activity
+			android:name=".Compose">
+			<intent-filter>
+				<action
+					android:name="com.ifewalter.android.textonmotion.ShortcutWidget.ACTION_WIDGET_COMPOSE" />
+			</intent-filter>
+			<meta-data
+				android:name="android.app.default_searchable"
+				android:value=".Search" />
+		</activity>
+		<activity
+			android:name=".About"></activity>
+		<meta-data
+			android:name="android.app.default_searchable"
+			android:value=".Search" />
+		<activity
+			android:name=".backuprestore.Register"></activity>
+		<activity
+			android:name=".backuprestore.Login"></activity>
+
+		<activity
+			android:name=".SelectPhoneContact"></activity>
+
+		<activity
+			android:name=".speechengine.VoiceSpeechEngine"
+			android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="portrait">
+			<meta-data
+				android:name="android.app.default_searchable"
+				android:value=".Search" />
+
+		</activity>
+		<activity
+			android:name="MessageView">
+			<meta-data
+				android:name="android.app.default_searchable"
+				android:value=".Search" />
+		</activity>
+		<activity
+			android:name="Search">
+			<intent-filter>
+				<action
+					android:name="android.intent.action.SEARCH" />
+			</intent-filter>
+			<meta-data
+				android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+		<service
+			android:name=".sendMessage.SendSMS"></service>
+		<service
+			android:name=".location.UserLocation"
+			android:icon="@drawable/icon"
+			android:label="TOM-Location"></service>
+		<receiver
+			android:name="MessageIntercept"
+			android:icon="@drawable/icon"
+			android:exported="true"
+			android:enabled="true"
+			android:label="@string/app_name">
+			<intent-filter
+				android:priority="10000"
+				android:icon="@drawable/icon">
+				<action
+					android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+			</intent-filter>
+
+		</receiver>
+
+
+
+		<activity
+			android:name=".backuprestore.sdBackup"></activity>
+		<activity
+			android:name=".backuprestore.sdRestore"></activity>
+		<activity
+			android:name=".backuprestore.BackupManager"></activity>
+		<activity
+			android:name="LongShortView">
+		</activity>
+		<activity
+			android:name="PlainCompose"></activity>
+		<activity
+			android:name="TomSettings">
+			<meta-data
+				android:name="android.app.default_searchable"
+				android:value=".Search" />
+		</activity>
+		<activity
+			android:name="SendMail"></activity>
+	</application>
 </manifest>
