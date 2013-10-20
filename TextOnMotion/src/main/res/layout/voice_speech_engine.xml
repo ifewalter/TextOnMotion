@@ -11,6 +11,7 @@
         android:id="@+id/voice_speech_options_container"
         android:layout_height="40dip"
         android:gravity="right"
+        android:background="#3E8AE0"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 

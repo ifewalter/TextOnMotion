@@ -10,6 +10,7 @@
         android:orientation="horizontal"
         android:id="@+id/conversation_list_actions_container"
         android:layout_width="fill_parent"
+        android:background="#3E8AE0"
         android:layout_marginTop="4dip"
         android:layout_height="48dip">
 
