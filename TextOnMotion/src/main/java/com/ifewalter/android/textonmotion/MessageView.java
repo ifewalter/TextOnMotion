@@ -32,7 +32,7 @@ import com.ifewalter.android.textonmotion.persistence.DeleteData;
 import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 import com.ifewalter.android.textonmotion.persistence.SelectData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.service.SendSMS;
 import com.ifewalter.android.textonmotion.speechengine.VoiceSpeechEngine;
 
 public class MessageView extends Activity {

@@ -11,7 +11,7 @@ import android.telephony.SmsMessage;
 import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 import com.ifewalter.android.textonmotion.persistence.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.service.SendSMS;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

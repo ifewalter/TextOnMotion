@@ -152,7 +152,7 @@
 				android:resource="@xml/searchable" />
 		</activity>
 		<service
-			android:name=".sendMessage.SendSMS"></service>
+			android:name=".service.SendSMS"></service>
 		<service
 			android:name=".location.UserLocation"
 			android:icon="@drawable/icon"

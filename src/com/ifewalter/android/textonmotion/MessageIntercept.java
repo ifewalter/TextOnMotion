@@ -7,7 +7,7 @@ import java.util.Random;
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.InsertData;
 import com.ifewalter.android.textonmotion.notificationengine.NotificationBar;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.service.SendSMS;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

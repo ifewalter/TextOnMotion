@@ -1,4 +1,4 @@
-package com.ifewalter.android.textonmotion.sendMessage;
+package com.ifewalter.android.textonmotion.service;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

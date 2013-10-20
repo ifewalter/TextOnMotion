@@ -15,7 +15,7 @@ import com.ifewalter.android.textonmotion.TomSettings;
 import com.ifewalter.android.textonmotion.databaseparoles.InitDatabase;
 import com.ifewalter.android.textonmotion.databaseparoles.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.service.SendSMS;
 
 import android.app.Activity;
 import android.app.AlertDialog;

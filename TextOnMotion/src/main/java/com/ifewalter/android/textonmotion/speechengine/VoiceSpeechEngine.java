@@ -38,7 +38,7 @@ import com.ifewalter.android.textonmotion.TomSettings;
 import com.ifewalter.android.textonmotion.persistence.InitDatabase;
 import com.ifewalter.android.textonmotion.persistence.SelectData;
 import com.ifewalter.android.textonmotion.location.UserLocation;
-import com.ifewalter.android.textonmotion.sendMessage.SendSMS;
+import com.ifewalter.android.textonmotion.service.SendSMS;
 
 import java.util.ArrayList;
 import java.util.List;
