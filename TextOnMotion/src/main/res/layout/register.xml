@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:background="#fff"
-	android:layout_height="fill_parent">
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:background="#fff"
-		android:orientation="vertical"
-		android:layout_weight="1.0"
-		android:layout_height="fill_parent">
-		<TextView
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:text="E-mail"
-			android:textSize="14sp"
-			android:textColor="#000" />
-		<EditText
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/register_email"
-			android:hint="example@gmail.com"
-			android:inputType="textEmailAddress" />
-		<TextView
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:text="Password"
-			android:textSize="14sp"
-			android:layout_marginTop="10dip"
-			android:textColor="#000" />
-		<EditText
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/register_password"
-			android:inputType="textPassword" />
-		<Button
-			android:id="@+id/register_login_text"
-			android:text="I already have an account"
-			android:textColor="#00a"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:textSize="12sp"
-			android:layout_marginTop="20dip"
-			android:layout_gravity="right" />
-	</LinearLayout>
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:background="#eee"
-		android:layout_alignParentBottom="true"
-		android:layout_height="50dip">
-		<Button
-			android:id="@+id/register_done"
-			android:layout_weight="1.0"
-			android:text="Done"
-			android:textSize="14sp"
-			android:textColor="#090"
-			android:textStyle="bold"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent" />
-		<Button
-			android:id="@+id/register_cancel"
-			android:layout_weight="1.0"
-			android:textColor="#f00"
-			android:textSize="14sp"
-			android:textStyle="bold"
-			android:text="Cancel"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent" />
-	</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#fff"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_email"
+            android:hint="example@gmail.com"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="14sp"
+            android:layout_marginTop="10dip"
+            android:textColor="#000" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register_login_text"
+            android:text="I already have an account"
+            android:textColor="#00a"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#3E8AE0"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dip">
+
+        <Button
+            android:id="@+id/register_done"
+            android:layout_weight="1.0"
+            android:text="Done"
+            android:textSize="14sp"
+            android:textColor="#090"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/register_cancel"
+            android:layout_weight="1.0"
+            android:textColor="#f00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
 </RelativeLayout>

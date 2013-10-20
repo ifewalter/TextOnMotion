@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#bfbfbf"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/plain_compose_options_container"
@@ -12,7 +12,8 @@
         android:layout_height="48dip"
         android:layout_alignParentBottom="true"
         android:gravity="right"
-        android:orientation="horizontal" >
+        android:background="#3E8AE0"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/plain_compose_text_length"
@@ -27,9 +28,10 @@
         <Button
             android:id="@+id/plain_compose_send_message_button"
             android:layout_width="90dip"
-			android:layout_height="44dip"
-			android:layout_marginTop="4dip"
-            android:background="@drawable/send_button" />
+            android:layout_height="44dip"
+            android:layout_marginTop="4dip"
+            android:textSize="18dp"
+            android:text="@string/label_send_key" />
     </LinearLayout>
 
     <LinearLayout
@@ -39,7 +41,7 @@
         android:layout_marginLeft="6dip"
         android:layout_marginRight="6dip"
         android:background="@drawable/conversation_list_container"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/plain_compose_contact_edit_text"
@@ -74,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_margin="4dip"
-        android:layout_weight="1.0" >
+        android:layout_weight="1.0">
 
         <EditText
             android:id="@+id/plain_compose_compose_box"

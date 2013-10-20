@@ -1,101 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:orientation="vertical"
-	android:background="#fff"
-	android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="fill_parent">
 
-	<FrameLayout
-		android:layout_width="fill_parent"
-		android:id="@+id/backup_manager_indicator"
-		android:layout_height="wrap_content"
-		android:padding="5dip">
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="fill_parent"
-			android:orientation="vertical"
-			android:background="#fff"
-			android:id="@+id/backup_manager_signed_out">
-			<TextView
-				android:layout_height="wrap_content"
-				android:layout_width="fill_parent"
-				android:background="#fff"
-				android:id="@+id/backup_manager_signed_out_title"
-				android:text="Signed Out"
-				android:textStyle="italic|bold"
-				android:layout_marginBottom="5dip"
-				android:textColor="#300"
-				android:layout_gravity="left" />
-			<TextView
-				android:layout_height="wrap_content"
-				android:background="#fff"
-				android:id="@+id/backup_manager_signed_out_rider"
-				android:textColor="#000"
-				android:gravity="center"
-				android:text="You must be signed in to use the online backup feature"
-				android:layout_width="fill_parent" />
-			<Button
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:id="@+id/backup_manager_register"
-				android:gravity="center"
-				android:text="Login / Register"
-				android:layout_width="wrap_content" />
-		</LinearLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/backup_manager_indicator"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
 
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="fill_parent"
-			android:orientation="vertical"
-			android:background="#fff"
-			android:id="@+id/backup_manager_signed_in">
-			<TextView
-				android:layout_height="wrap_content"
-				android:layout_width="fill_parent"
-				android:background="#fff"
-				android:id="@+id/backup_manager_signed_in_title"
-				android:text="Signed In"
-				android:textStyle="italic|bold"
-				android:layout_marginBottom="5dip"
-				android:textColor="#060"
-				android:layout_gravity="left" />
-			<TextView
-				android:layout_height="wrap_content"
-				android:background="#fff"
-				android:gravity="center"
-				android:textColor="#000"
-				android:id="@+id/backup_manager_signed_in_rider"
-				android:text="Proceed to backup or restore your messages to our secure online facility"
-				android:layout_width="fill_parent" />
-			<LinearLayout
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
-				android:gravity="center"
-				android:orientation="horizontal">
-				<Button
-					android:layout_height="wrap_content"
-					android:layout_gravity="center"
-					android:gravity="center"
-					android:id="@+id/backup_manager_backup_button"
-					android:text="Backup"
-					android:layout_width="wrap_content" />
-				<Button
-					android:layout_height="wrap_content"
-					android:layout_gravity="center"
-					android:gravity="center"
-					android:text="Restore"
-					android:id="@+id/backup_manager_restore_button"
-					android:layout_width="wrap_content" />
-				<Button
-					android:layout_height="wrap_content"
-					android:layout_gravity="center"
-					android:gravity="center"
-					android:text="Sign Out"
-					android:id="@+id/backup_manager_sign_out_button"
-					android:layout_width="wrap_content" />
-			</LinearLayout>
-		</LinearLayout>
-	</FrameLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:id="@+id/backup_manager_signed_out">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="#fff"
+                android:id="@+id/backup_manager_signed_out_title"
+                android:text="@string/signed_out"
+                android:textStyle="italic|bold"
+                android:layout_marginBottom="5dip"
+                android:textColor="#300"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:id="@+id/backup_manager_signed_out_rider"
+                android:textColor="#000"
+                android:gravity="center"
+                android:text="@string/login_error_helper"
+                android:layout_width="fill_parent" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/backup_manager_register"
+                android:gravity="center"
+                android:text="@string/login_or_register"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:id="@+id/backup_manager_signed_in">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="#fff"
+                android:id="@+id/backup_manager_signed_in_title"
+                android:text="Signed In"
+                android:textStyle="italic|bold"
+                android:layout_marginBottom="5dip"
+                android:textColor="#060"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/backup_manager_signed_in_rider"
+                android:text="@string/backup_help_message"
+                android:layout_width="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/backup_manager_backup_button"
+                    android:text="@string/backup"
+                    android:layout_width="wrap_content" />
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/restore"
+                    android:id="@+id/backup_manager_restore_button"
+                    android:layout_width="wrap_content" />
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/sign_out"
+                    android:id="@+id/backup_manager_sign_out_button"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 
 </LinearLayout>

@@ -1,113 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:id="@+id/conversation_list_container"
-	android:orientation="vertical"
-	android:background="#bfbfbf">
-	<RelativeLayout
-		android:orientation="horizontal"
-		android:id="@+id/conversation_list_actions_container"
-		android:layout_width="fill_parent"
-		android:layout_marginTop="4dip"
-		android:layout_height="48dip">
-		<Button
-			android:layout_width="100dip"
-			android:layout_height="48dip"
-			android:id="@+id/conversation_list_compose_menu_button"
-			android:layout_marginRight="10dip"
-			android:layout_marginLeft="4dip"
-			android:layout_marginTop="4dip"
-			android:background="@drawable/new_regular_message"
-			android:layout_gravity="left"
-			android:textColor="#000000" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/conversation_list_container"
+    android:orientation="vertical"
+    android:background="#bfbfbf">
 
-		<ImageButton
-			android:src="@drawable/sym_keyboard_search"
-			android:id="@+id/message_search"
-			android:layout_gravity="right"
-			android:background="#0fff"
-			android:layout_marginLeft="60dip"
-			android:layout_width="wrap_content"
-			android:layout_alignParentRight="true"
-			android:layout_height="fill_parent" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/conversation_list_actions_container"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="4dip"
+        android:layout_height="48dip">
 
-	</RelativeLayout>
+        <Button
+            android:layout_width="100dip"
+            android:layout_height="48dip"
+            android:id="@+id/conversation_list_compose_menu_button"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:layout_gravity="left"
+            android:text="@string/compose"
+            android:textColor="#000000" />
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:id="@+id/conversation_list_list_container"
-		android:layout_below="@id/conversation_list_actions_container"
-		android:layout_height="fill_parent"
-		android:background="@drawable/conversation_list_container"
-		android:layout_margin="6dip"
-		android:layout_width="fill_parent">
-		<ListView
-			android:id="@+id/conversation_list_message_list_view"
-			android:layout_height="wrap_content"
-			android:dividerHeight="1dip"
-			android:footerDividersEnabled="true"
-			android:divider="#797979"
-			android:smoothScrollbar="true"
-			android:fadeScrollbars="true"
-			android:padding="4dip"
-			android:fadingEdge="none"
-			android:layout_width="fill_parent">
-		</ListView>
-		
-	</LinearLayout>
+        <ImageButton
+            android:src="@drawable/sym_keyboard_search"
+            android:id="@+id/message_search"
+            android:layout_gravity="right"
+            android:background="#0fff"
+            android:layout_marginLeft="60dip"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/conversation_list_list_container"
+        android:layout_below="@id/conversation_list_actions_container"
+        android:layout_height="fill_parent"
+        android:background="@drawable/conversation_list_container"
+        android:layout_margin="6dip"
+        android:layout_width="fill_parent">
+
+        <ListView
+            android:id="@+id/conversation_list_message_list_view"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dip"
+            android:footerDividersEnabled="true"
+            android:divider="#797979"
+            android:smoothScrollbar="true"
+            android:fadeScrollbars="true"
+            android:padding="4dip"
+            android:fadingEdge="none"
+            android:layout_width="fill_parent"/>
+
+    </LinearLayout>
 
 
-	<FrameLayout
-		android:id="@+id/main_compose_menu_container"
-		android:layout_weight="1.0"
-		android:layout_width="wrap_content"
-		android:layout_below="@id/conversation_list_message_list_view"
-		android:focusable="true"
-		android:background="#5589CE"
-		android:visibility="gone"
-		android:paddingTop="2dip"
-		android:paddingBottom="2dip"
-		android:layout_marginTop="48dip"
-		android:focusableInTouchMode="true"
-		android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/main_compose_menu_container"
+        android:layout_weight="1.0"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/conversation_list_message_list_view"
+        android:focusable="true"
+        android:background="#5589CE"
+        android:visibility="gone"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        android:layout_marginTop="48dip"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content">
 
-		<LinearLayout
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:layout_margin="2dip"
-			android:orientation="vertical">
-			<Button
-				android:layout_height="wrap_content"
-				android:layout_width="fill_parent"
-				android:id="@+id/new_plain_message"
-				android:background="#555"
-				android:padding="10dip"
-				android:textSize="17sp"
-				android:text="Regular Mode"
-				android:textColor="#fff" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dip"
+            android:orientation="vertical">
 
-			<Button
-				android:layout_height="wrap_content"
-				android:layout_width="fill_parent"
-				android:id="@+id/new_message"
-				android:background="#fff"
-				android:padding="10dip"
-				android:textSize="17sp"
-				android:text="Walking Mode"
-				android:textColor="#555" />
-			<Button
-				android:layout_height="wrap_content"
-				android:layout_width="fill_parent"
-				android:background="#555"
-				android:padding="10dip"
-				android:text="Interactive Mode"
-				android:textSize="17sp"
-				android:id="@+id/new_voice_message"
-				android:textColor="#fff" />
-		</LinearLayout>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/new_plain_message"
+                android:background="#555"
+                android:padding="10dip"
+                android:textSize="17sp"
+                android:text="@string/regular_mode"
+                android:textColor="#fff" />
 
-	</FrameLayout>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/new_message"
+                android:background="#fff"
+                android:padding="10dip"
+                android:textSize="17sp"
+                android:text="@string/walking_mode"
+                android:textColor="#555" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="#555"
+                android:padding="10dip"
+                android:text="@string/interactive_mode"
+                android:textSize="17sp"
+                android:id="@+id/new_voice_message"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </FrameLayout>
 
 </RelativeLayout>
